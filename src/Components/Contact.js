@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container,Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Contact = () => {
 
@@ -25,24 +25,24 @@ const Contact = () => {
 
   }
   return (
-  
-        <Container style={{ textAlign: "center" }}>
-           <h2 className="display-4" style={{ textAlign: 'center' }}>Contact Us</h2>
-        
-          <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-          hic laboriosam suscipit labore in expedita alias. Distinctio quam fuga
-          perferendis recusandae natus amet provident incidunt fugit soluta
-          facere eos quis praesentium, illo officiis facilis sed dolorem,
-          impedit porro nisi eveniet? Illo qui iste quisquam nisi magni
-          molestiae. Dolor impedit obcaecati, amet voluptates quidem cupiditate
-          voluptatem aperiam ipsa deserunt? Ipsum reiciendis tempora,
-          reprehenderit ducimus rem temporibus a repudiandae. Ratione vero fugit
-          officia magni repellendus quis, fugiat vel ipsum pariatur, omnis
-          quidem.
-        </p>
-        <Row>
-      <hr />
+
+    <Container style={{ textAlign: "center" }}>
+      <h2 className="display-4" style={{ textAlign: 'center' }}>Contact Us</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        hic laboriosam suscipit labore in expedita alias. Distinctio quam fuga
+        perferendis recusandae natus amet provident incidunt fugit soluta
+        facere eos quis praesentium, illo officiis facilis sed dolorem,
+        impedit porro nisi eveniet? Illo qui iste quisquam nisi magni
+        molestiae. Dolor impedit obcaecati, amet voluptates quidem cupiditate
+        voluptatem aperiam ipsa deserunt? Ipsum reiciendis tempora,
+        reprehenderit ducimus rem temporibus a repudiandae. Ratione vero fugit
+        officia magni repellendus quis, fugiat vel ipsum pariatur, omnis
+        quidem.
+      </p>
+      <Row>
+        <hr />
         <Col md={5}>
           <h4 >Phone</h4>
           <p >
@@ -54,17 +54,17 @@ const Contact = () => {
           </p>
         </Col>
 
-				<Col md={5} style={{margin:" 50px"}}>
+        <Col md={5} style={{ margin: " 50px" }}>
 
           <h4> Subscribe with your Email</h4>
           <input type="text" placeholder='Your Email' value={details} onChange={emailHandler} />
-          <button  onClick={PostEmail}>Subscribe</button> 
+          <button onClick={PostEmail}>Subscribe</button>
 
         </Col>
       </Row>
-			<hr />
+      <hr />
     </Container>
-  
+
   )
 }
 

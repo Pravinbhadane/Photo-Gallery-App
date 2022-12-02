@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Spinner } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
-const Photos =() => {
+const Photos = () => {
     const [photos, setPhotos] = useState([])
 
     useEffect(() => {
@@ -23,19 +23,19 @@ const Photos =() => {
                                     style={{ height: "200px" }} />
                                 <Card.Body>
                                     <Card.Title>{photo.author}</Card.Title>
-                                    <a 
-                                    href={photo.url} 
-                                    className="btn btn-dark btn-sm" 
-                                    style={{margin:"0 5px"}}
+                                    <a
+                                        href={photo.url}
+                                        className="btn btn-dark btn-sm"
+                                        style={{ margin: "0 5px" }}
                                     > View detailes
                                     </a>
-                                    
-                                    <Link to ={`/photos/${photo.id}`} 
-                                    className="btn btn-dark btn-sm" 
-                                    style={{margin:"0 5px"}}
+
+                                    <Link to={`/photos/${photo.id}`}
+                                        className="btn btn-dark btn-sm"
+                                        style={{ margin: "0 5px" }}
                                     > View enlarged
                                     </Link>
-                                    
+
                                 </Card.Body>
                             </Card>
                         </Col>
